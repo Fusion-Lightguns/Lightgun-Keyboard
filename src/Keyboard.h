@@ -19,6 +19,12 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+/* Remixed/Updated By Fusion Lightguns 2023
+- Added Number Buttons
+- Added WASD
+- Removed extra uneeded stuff
+*/
+
 #ifndef KEYBOARD_h
 #define KEYBOARD_h
 
@@ -32,7 +38,44 @@
 
 //================================================================================
 //================================================================================
-//  Keyboard
+// FUSION LIGHTGUNS 2023 
+ 
+// DPAD
+#define KEY_UP_ARROW      0xDA
+#define KEY_DOWN_ARROW    0xD9
+#define KEY_LEFT_ARROW    0xD8
+#define KEY_RIGHT_ARROW   0xD7
+
+// NUMBERS
+#define KEY_1		  0x31
+#define KEY_2		  0x32
+#define KEY_3		  0x33
+#define KEY_4		  0x34
+#define KEY_5		  0x35
+#define KEY_6		  0x36
+#define KEY_7		  0x37
+#define KEY_8		  0x38
+#define KEY_9		  0x39
+
+// WASD
+#define KEY_W		  0x57
+#define KEY_A		  0x41
+#define KEY_S		  0x54
+#define KEY_D		  0x44
+
+// Function keys
+#define KEY_F1            0xC2
+#define KEY_F2            0xC3
+#define KEY_F3            0xC4
+#define KEY_F4            0xC5
+#define KEY_F5            0xC6
+#define KEY_F6            0xC7
+#define KEY_F7            0xC8
+#define KEY_F8            0xC9
+#define KEY_F9            0xCA
+#define KEY_F10           0xCB
+#define KEY_F11           0xCC
+#define KEY_F12           0xCD
 
 // Modifiers
 #define KEY_LEFT_CTRL     0x80
@@ -43,6 +86,7 @@
 #define KEY_RIGHT_SHIFT   0x85
 #define KEY_RIGHT_ALT     0x86
 #define KEY_RIGHT_GUI     0x87
+
 
 // Misc keys
 #define KEY_UP_ARROW      0xDA
@@ -65,50 +109,7 @@
 #define KEY_SCROLL_LOCK   0xCF
 #define KEY_PAUSE         0xD0 // Pause / Break
 
-// Numeric keypad
-#define KEY_NUM_LOCK      0xDB
-#define KEY_KP_SLASH      0xDC
-#define KEY_KP_ASTERISK   0xDD
-#define KEY_KP_MINUS      0xDE
-#define KEY_KP_PLUS       0xDF
-#define KEY_KP_ENTER      0xE0
-#define KEY_KP_1          0xE1
-#define KEY_KP_2          0xE2
-#define KEY_KP_3          0xE3
-#define KEY_KP_4          0xE4
-#define KEY_KP_5          0xE5
-#define KEY_KP_6          0xE6
-#define KEY_KP_7          0xE7
-#define KEY_KP_8          0xE8
-#define KEY_KP_9          0xE9
-#define KEY_KP_0          0xEA
-#define KEY_KP_DOT        0xEB
 
-// Function keys
-#define KEY_F1            0xC2
-#define KEY_F2            0xC3
-#define KEY_F3            0xC4
-#define KEY_F4            0xC5
-#define KEY_F5            0xC6
-#define KEY_F6            0xC7
-#define KEY_F7            0xC8
-#define KEY_F8            0xC9
-#define KEY_F9            0xCA
-#define KEY_F10           0xCB
-#define KEY_F11           0xCC
-#define KEY_F12           0xCD
-#define KEY_F13           0xF0
-#define KEY_F14           0xF1
-#define KEY_F15           0xF2
-#define KEY_F16           0xF3
-#define KEY_F17           0xF4
-#define KEY_F18           0xF5
-#define KEY_F19           0xF6
-#define KEY_F20           0xF7
-#define KEY_F21           0xF8
-#define KEY_F22           0xF9
-#define KEY_F23           0xFA
-#define KEY_F24           0xFB
 
 // Supported keyboard layouts
 extern const uint8_t KeyboardLayout_de_DE[];
