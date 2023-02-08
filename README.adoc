@@ -12,6 +12,7 @@
       
       - Removed unnecessary buttons from Keyboard.h 
       
- # Credits to Arduino LLC
+      
+# Credits to Arduino LLC
  
       - I basiclly just found buttons I wanted to add & tweak code to be more Lightgun friendly.
